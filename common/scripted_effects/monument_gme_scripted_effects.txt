@@ -1,4 +1,4 @@
-check_gme_subject_monuments = {
+check_subject_monuments = {
 	hidden_effect = {
 		if = {
 			limit = {
