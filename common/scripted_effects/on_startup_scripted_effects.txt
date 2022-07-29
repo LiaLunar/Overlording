@@ -1,0 +1,1092 @@
+on_startup_effects_vanilla = {
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+}
+
+on_startup_effects_ab = {
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			tag = FRC
+		}
+		country_event = { id = ab_frc_disaster_event.0 days = 1 }
+	}
+	if = {
+		limit = {
+			tag = ADU
+		}
+		country_event = { id = ab_andalusian_event.0 days = 1 }
+	}
+	if = {
+		limit = {
+			tag = BYZ
+		}
+		country_event = { id = ab_byzantium.9 days = 0 }
+	}
+	if = {
+		limit = {
+			tag = GLH
+		}
+		country_event = { id = ab_ghorde.1 days = 0 }
+	}
+	if = {
+		limit = {
+			has_dlc = "Mandate of Heaven"
+			has_reform = celestial_empire
+		}
+		add_faction = temples
+		add_faction = enuchs
+		add_faction = bureaucrats
+		add_faction_influence = {
+			faction = enuchs
+			influence = 45
+		}
+		add_faction_influence = {
+			faction = bureaucrats
+			influence = 25
+		}
+		add_faction_influence = {
+			faction = temples
+			influence = 30
+		}
+	}
+}
+
+on_startup_effects_LotF = {
+	if = { 
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = ENG
+		}
+		canada_region = { undiscover_country = ROOT }
+	}
+	if = {
+		limit = {
+			NOT = { has_global_flag = started_up_global_flag }
+		}
+		if = {
+			limit = { has_country_flag = USA_start }
+			canada_region = {
+				discover_country = ROOT 
+			}
+			great_lakes_region = {
+				discover_country = ROOT 
+			}
+			california_region = {
+				undiscover_country = ROOT 
+			}
+			mexico_region = {
+				undiscover_country = ROOT 
+			}
+			north_east_pacific_region = {
+				undiscover_country = ROOT 
+			}
+			south_east_pacific_region = {
+				undiscover_country = ROOT 
+			}
+			north_west_pacific_region = {
+				undiscover_country = ROOT 
+			}
+			east_china_sea_region = {
+				undiscover_country = ROOT 
+			}
+			south_china_sea_region = {
+				undiscover_country = ROOT 
+			}
+			east_indian_ocean_region = {
+				undiscover_country = ROOT 
+			}
+			south_indian_ocean_region = {
+				undiscover_country = ROOT 
+			}
+			korea_region = {
+				undiscover_country = ROOT 
+			}
+			manchuria_region = {
+				undiscover_country = ROOT 
+			}
+			bengal_region = {
+				undiscover_country = ROOT 
+			}
+			oceanea_region = {
+				undiscover_country = ROOT 
+			}
+			south_west_pacific_region = {
+				undiscover_country = ROOT 
+			}
+			pacific_south_america_region = {
+				undiscover_country = ROOT 
+			}
+			coromandel_region = {
+				undiscover_country = ROOT 
+			}
+			moluccas_region = {
+				undiscover_country = ROOT 
+			}
+			hudson_bay_sea_area = {
+				undiscover_country = ROOT 
+			}
+			rio_grande_region = {
+				undiscover_country = ROOT 
+			}
+			china_superregion = {
+				undiscover_country = ROOT 
+			}
+			east_indies_superregion = {
+				undiscover_country = ROOT 
+			}
+			andes_superregion = {
+				undiscover_country = ROOT 
+			}
+			1789 = {
+				undiscover_country = ROOT 
+			}
+			1568 = {
+				discover_country = ROOT 
+			}
+			481 = {
+				discover_country = ROOT 
+			}
+			4930 = {
+				discover_country = ROOT 
+			}
+			4931 = {
+				discover_country = ROOT 
+			}
+			4927 = {
+				discover_country = ROOT 
+			}
+			4928 = {
+				discover_country = ROOT 
+			}
+			4929 = {
+				discover_country = ROOT 
+			}
+			955 = {
+				discover_country = ROOT 
+			}
+			4932 = {
+				discover_country = ROOT 
+			}
+			4933 = {
+				discover_country = ROOT 
+			}
+			4879 = {
+				discover_country = ROOT 
+			}
+			935 = {
+				discover_country = ROOT 
+			}
+			1659 = {
+				discover_country = ROOT 
+			}
+			1660 = {
+				discover_country = ROOT 
+			}
+			4925 = {
+				discover_country = ROOT 
+			}
+			4926 = {
+				discover_country = ROOT 
+			}
+			every_province = {
+				limit = { owned_by = USA }
+				add_core = USA
+			}
+			set_global_flag = started_up_global_flag
+		}
+		if = {
+			limit = { 
+				has_global_flag = civil_war_bookmark
+				ai = no
+				OR = {
+					tag = CSA
+					tag = USA
+				}
+			}
+			every_province = {
+				limit = { 
+					owned_by = USA
+					culture = dixie
+				}
+				add_core = CSA
+			}
+			2551 = { add_core = CSA }
+			932 = {
+				add_great_project_tier = { 
+					type = fort_sumter
+					tier = 1 
+				}
+			}
+			953 = {
+				add_great_project_tier = { 
+					type = white_house
+					tier = 2 
+				}
+			}
+			965 = {
+				add_great_project_tier = { 
+					type = west_point
+					tier = 1 
+				}
+			}
+			956 = {
+				add_great_project_tier = { 
+					type = liberty_bell
+					tier = 1 
+				}
+			}
+			CSA = {
+				every_owned_province = { remove_core = USA }
+			}
+			north_america_superregion = { discover_country = ROOT }
+			east_american_sea_superregion = { discover_country = ROOT }
+			great_lakes_sea_region = { discover_country = ROOT }
+			1806 = { discover_country = ROOT }
+			1805 = { discover_country = ROOT }
+			1804 = { discover_country = ROOT }
+			1807 = { discover_country = ROOT }
+			481 = { discover_country = ROOT }
+			polynesian_triangle_area = { undiscover_country = ROOT }
+			north_pacific_area = { undiscover_country = ROOT }
+			south_pacific_area = { undiscover_country = ROOT }
+			north_pacific_sea_superregion = { undiscover_country = ROOT }
+			indian_pacific_sea_superregion = { undiscover_country = ROOT }
+			east_indies_superregion = { undiscover_country = ROOT }
+			china_superregion = { undiscover_country = ROOT }
+			tartary_superregion = { undiscover_country = ROOT }
+			far_east_superregion = { undiscover_country = ROOT }
+			alaska_area = { undiscover_country = ROOT }
+			hecate_strait_area = { undiscover_country = ROOT }
+			east_alaska_area = { undiscover_country = ROOT }
+			straits_of_georgia_area = { undiscover_country = ROOT }
+			oceanea_region = { undiscover_country = ROOT }
+			set_global_flag = started_up_global_flag
+		}
+	}
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+}
+
+on_startup_effects_th = {
+	set_global_flag = touhou_universalis_is_active #Global flag. Needed for mod support
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	if = {
+		limit = {
+			has_government_attribute = enables_yama_authority
+		}
+		save_global_event_target_as = YamaOfGensokyo
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+}
+
+on_startup_effects_anbennar = {
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	if = {
+		limit = {
+			OR = {
+				was_tag = Y20
+				tag = Y20
+			}
+		}
+		save_global_event_target_as = feiten_or_was_feiten_target
+	}
+
+	#institution spread help
+
+	events = {
+		# muslim_school_events.20 #Pick School
+		high_philosophy_events.0
+
+		#Anbennar
+		lilac_wars.1
+		lilac_wars.2
+		#lilac_wars.1c
+		#initialization.1
+		anbennar_setup.1		#Sets up Monstrous Opinions
+		anbennar_setup.2		#Sets up Lilac Wars Parties
+		anbennar_setup.3		#Sets up discovered regions #### Heavy event, might need to be broken down with the addition of new province/country if Black Screen Crash at startup ######
+		anbennar_setup.4		#Pragmatic Sanction
+		anbennar_setup.6		#Mage Organization Setup
+		anbennar_setup.11		#Adventurer Organization Setup
+		anbennar_setup.7		#Evil/Witch King opinions
+		anbennar_setup.9		#Global Setup for Racial Admin Mil #### Heavy event, might need to be broken down with the addition of new province/country if Black Screen Crash at startup ######
+		anbennar_setup.10		#Sets up Greentide Adventurer opinion
+		anbennar_setup.12
+		anbennar_setup.13		#Adds a hacky delay to prevent existing adventurers colonizing straight away
+		#estate_organization.1		#Give unassigned countries appropriate modifier - does anbennar_setup.6 for rest of game
+		#kheteratan_events.1		#Sets up Khetarch for Kheterata
+		#kobold_events.1 		#Sets up for kobolds
+		diggy.108				#Dwarovar Claimer event
+		diggy.110				#Hold and Colonial nerf setup event
+		diggy.106				#special caverns
+		#deepwoods.100			#Deepwoods setup - this caused black screen crash and is redundant as other anbennar_setup.3 does it
+		verkalgulan_events.1		#Verkal Gulan setup
+		#vegan.101				#Setup abundant wood in deepwoods
+		rahenraj.0				#Setup for the Raj
+		jaddari_missions.1000	#AI boost for Jaddari
+		centaur.3				#Horde modifier for centaur
+		ogre.1					#Adds Reign of Ziltagh to Maghargma
+		ogre.2					#Sets up warring northern Fathide clan opinions
+		ogre.3					#Sets up Ogre Monarch v Tribal opinion
+		ogre.4					#Sets up Ogre Tribal v Monarch opinion
+		magic_ruler.109			#Sets up magic for rulers with undefined skills
+		# anbennar_setup.17		#exodus goblin invasion
+		flavor_corintar.3		#Adds Lothane Bluetusk's Leadership to Corintar
+		religious_leagues.10	#Starting religious peace
+		flavor_neckcliffe.1		#Neckcliffe intro event and setting up the debuffs
+		flavor_arverynn.0		#Arverynn intro and Sarda setup
+		flavor_trompolere.0		#Trompolere intro event
+		flavor_toarnen.1		#The Whitecliffs burghers uprising of 1356
+		xhazobkult_events.0		#Xhazobkult setup
+		bulwar_flavour.28		#Sets up Surani Refugees in Bulwar
+		azka_evran.1			#Azka-Evran intro event
+		one_xia.9				#Setup for the Xia
+		flavor_jiantsiang.1		#jiantsiang setup
+		flavor_nuugdan_tsarai.1					#Faceless Queen
+		flavour_balrijin.29	#Balrijin-Lanjinhui favor/trust setup
+		# the_command.0			#The Great Command
+		spirits.001				#Sets up temple coverage
+		treasurefleet.0			#Treasure Fleet Begin Cycle
+		guhe.100 				#Guhe Setup Event
+		
+
+		#Silver Families
+		silver_families.1		#Silmuna
+		silver_families.2		#Siloriel
+		silver_families.3		#Silcalas
+		silver_families.4		#Silistra
+		silver_families.5		#Silnara
+		silver_families.6		#Silebor
+		silver_families.7		#Silurion
+		silver_families.8		#Silgarion
+
+		#anbennar_setup_player.1	#give magic org to player
+		#anbennar_setup_player.2	#give racial admin mil to player
+
+		#########     Racial Pop Stuff     ###########
+		#race_setup_events.1		#Sets up Racial Tolerance Level
+		#race_setup_events.2		#Ai only event - Affects how the ai uses the system
+		#race_setup_events.4		#Add minorities to province / Culture Conversion -
+		#race_setup_events.7		#Its 4 but for everyone
+		#race_setup_events.9		#Expel/Purge opinions
+		#########     Racial Pop Stuff     ###########
+
+		#artifice
+		#anbennar_setup.18
+		anbennar_setup.19
+		migration_force_settle.2
+		great_conqueror.1				#GC setup
+		new_sun_cult.7 			#NSC setup in case MoH is disabled
+		flavor_honsai.1 #Ghostempror lifetime startup
+
+
+	}
+
+	#update_artifice_points = yes
+	country_event = {
+		id = anbennar_setup.20
+		days = 32
+	}
+	
+	#Introduction to the castes
+	country_event = {
+		id = estate_castes_events.0
+		days = 15
+	}
+
+	# Add wine to Wine Lords
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			OR = {
+				has_reform = wine_lord_reform
+				has_reform = roilsard_elective
+				has_reform = wineport_merchants
+			}
+		}
+		every_owned_province = {
+			limit = {
+				trade_goods = wine
+			}
+			add_province_modifier = {
+				name = wine_lord_wine
+				duration = -1
+				hidden = yes
+			}
+		}
+	}
+
+	#Derek Deland Setup and explanation
+	A13 = {
+		country_event = {
+			id = flavor_gawed.4
+			days = 1
+		}
+	}
+
+	# every_country = {
+		# country_event = { id = anbennar_setup.9 days = 2 }
+	# }
+
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			capital_scope = {
+				OR = {
+					superregion = escann_superregion
+					region = forlorn_vale_region
+				}
+				NOT = { region = dostanor_region region = ourdia_region }
+			}
+			NOT = {
+				culture_group = orcish
+				culture_group = goblin
+			}
+			NOT = { tag = A32 }	#Dont let Ibevar, Silent Repose, and Orda Aldresia get this
+			NOT = { tag = A83 }
+			NOT = { tag = A77 }
+		}
+		country_event = { id = greentide.0 days = 1 }
+	}
+
+	# AI need this event on day 1 or they release shit
+	if = {
+		limit = {
+			tag = A30
+			ai = yes
+			NOT = { is_year = 1445 }
+		}
+		country_event = { id = flavor_wex.2 }
+	}
+
+	if = {
+		limit = {
+			tag = G40 # Tehanek
+			NOT = { is_year = 1445 }
+		}
+		country_event = { id = damestear.4 days = 14600 random = 3650 }
+	}
+
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			capital_scope = {
+				OR = {
+					superregion = escann_superregion
+					region = forlorn_vale_region
+				}
+				NOT = { region = dostanor_region region = ourdia_region }
+			}
+			OR = {
+				culture_group = orcish
+				culture_group = goblin
+			}
+		}
+		country_event = { id = greentide.1 days = 1 }
+	}
+
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Z18
+		}
+		country_event = { id = greentide.2 days = 1 }
+	}
+
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			culture = white_reachman
+		}
+		country_event = { id = greentide.3 days = 1 }
+	}
+
+	if = {
+		limit = {
+			tag = A32
+			NOT = { has_country_flag = ibevar_reformation_flag }
+		}
+		set_country_flag = ibevar_reformation_flag
+		add_disaster_progress = { disaster = ibevar_reformation value = 100 }
+		every_owned_province = {
+			limit = { has_province_modifier = ibevar_old_tradition }
+			set_variable = { ibReform = 100 }
+		}
+	}
+
+	if = {
+		limit = {
+			is_year = 1444
+			tag = Y58
+		}
+		country_event = { id = lotdekkhang.4 days = 3 } #Lot Dekkhang intro event and setting up hobgoblin tolerance
+	}
+
+	if = {
+		limit = {
+			owns_core_province = 4565
+		}
+		country_event = { id = bim_lau_flavour.4 days = 1 } #Bim Lau Necropolis Setup
+    }
+
+	Y09 = { #tyrant system setup
+		country_event = {
+			id = bianfang.7
+			days = 1
+		}
+	}
+
+	#Khom civil war events START
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y67	#Ma Hoang
+		}
+		country_event = {
+			id = khom_civilwar.1
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y66	#Hon Sai
+		}
+		country_event = {
+			id = khom_civilwar.2
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y71	#Kudet Kai
+		}
+		country_event = {
+			id = khom_civilwar.3
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y72	#Chien Binhrung
+		}
+		country_event = {
+			id = khom_civilwar.4
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y63	#Verkal Ozovar
+		}
+		country_event = {
+			id = khom_civilwar.10
+			days = 20
+			random = 20
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y76	#Hebat Hari
+		}
+		country_event = {
+			id = khom_civilwar.15
+			days = 20
+			random = 20
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y73	#Sirtan
+		}
+		country_event = {
+			id = khom_civilwar.20
+			days = 40
+			random = 40
+		}
+	}
+	if = {
+		limit = {
+			NOT = { is_year = 1445 }
+			tag = Y67	#Ma Hoang
+		}
+		country_event = {
+			id = khom_civilwar.26
+			days = 270
+			random = 90
+		}
+	}
+	#Khom civil war events END
+
+	#########     Racial Pop Stuff     ###########
+	country_event = { id = race_setup_events.1 days = 1 }
+	country_event = { id = race_setup_events.2 days = 1 }
+	country_event = { id = race_setup_events.4 days = 1 }
+	country_event = { id = race_setup_events.9 days = 1 }
+
+	country_event = { id = race_setup_events.6 days = 1 } #On Culture Promote
+	country_event = { id = racial_modifiers.7 days = 1 } #Save primary culture
+	#########     Racial Pop Stuff     ###########
+
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	# initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+	anb_initialize_schools_effect = yes
+	if = {
+		limit = { OR = { tag = J06 tag = J07 } }
+		country_event = { id = lake.42 } #Explain Ultakal Decree
+	}
+	#Mother Akan event cycle start
+	if = {
+		limit = {
+			NOT = { has_global_flag = akan_cycle_timer }
+			NOT = { is_year = 1445 }
+		}
+		set_global_flag = akan_cycle_timer
+		random_country = {
+			country_event = {
+				id = mother_akan.4
+				days = 1315
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { is_year = 1445 } }
+		set_global_flag = mother_akan_2
+	}
+	#Mother Akan mountain count start
+	if = {
+		limit = { NOT = { is_year = 1445 } }
+		REB = { set_variable = { akan_mountains = 2 } }
+	}
+
+	#Birsartanses setup
+	F21 = {
+		country_event = { id = flavour_birsartanses.0 }
+	}
+	
+	if = {
+		limit = { tag = R51 NOT = { check_variable = { diplomaticAnnexations = 1 } } }
+		set_variable = { diplomaticAnnexations = 0 }
+	}
+	
+	if = {
+		limit = {
+			NOT = { has_dlc = "El Dorado" }
+			religion = ynn_river_worship
+		}
+		add_country_modifier = {
+			name = ynn_dark_ages
+			duration = -1
+			hidden = yes
+		}
+	}
+	#Ynn Worship event cycle start
+	if = {
+		limit = {
+			NOT = { has_global_flag = ynn_cycle_timer }
+			NOT = { is_year = 1445 }
+		}
+		set_global_flag = ynn_cycle_timer
+		random_country = {
+			country_event = {
+				id = ynn_zodiac.1
+				days = 1145
+			}
+		}
+	}
+	if = {
+		limit = { NOT = { is_year = 1445 } }
+		set_global_flag = ynn_zodiac_7
+	}
+	update_magic_study_experience_modifier = {}
+
+	# Expedition
+	#REB = { country_event = { id = diggy_expedition.0 } }
+
+	if = { #Starts Azjakuma - Command Truce | sets event to give aikogeoke to owner of akhortosal 70 years after start
+		limit = {
+			tag = Y01
+			NOT = { has_country_flag = oni_truce_happened } #because it happens 15 days after game start
+			#prevents happening multiple times if you reload before then
+		}
+		country_event = {
+			id = flavor_azjakuma.15
+			days = 15
+		}
+		set_country_flag = oni_truce_happened #cleared when event is fired, it has fire_only_once
+	}
+
+	#Remnant colonist removal
+	if = {
+		limit = {
+			has_country_flag = dwarovar_remnant
+			NOT = { has_country_flag = remnant_stagnation_disaster_end }
+			NOT = { has_country_modifier = remnant_legacy }
+		}
+		add_country_modifier = { name = remnant_legacy duration = 31 hidden = yes }
+	}
+}
+
+run_on_startup_compatability_effects = {
+	#Ante Bellum
+	if = {
+		limit = {
+			exists = FRC
+		}
+		on_startup_effects_ab = yes
+		set_global_flag = ab_mod_active
+	}
+	#Touhou Universalis
+	else_if = {
+		limit = {
+			exists = GNK
+		}
+		on_startup_effects_th = yes
+		set_global_flag = th_mod_active
+	}
+	#Anbennar
+	else_if = {
+		limit = {
+			exists = R71
+		}
+		on_startup_effects_anbennar = yes
+		set_global_flag = anb_mod_active
+	}
+	#LotF
+	else_if = {
+		limit = {
+			965 = {
+				OR = {
+					has_great_project = {
+						type = west_point
+						tier = 0
+					}
+					has_great_project = {
+						type = west_point
+						tier = 1
+					}
+					has_great_project = {
+						type = west_point
+						tier = 2
+					}
+					has_great_project = {
+						type = west_point
+						tier = 3
+					}
+				}
+			}
+		}
+		on_startup_effects_LotF = yes
+		set_global_flag = LotF_mod_active
+	}
+	#Vanilla
+	else = {
+		on_startup_effects_vanilla = yes
+	}
+}
