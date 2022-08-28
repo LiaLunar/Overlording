@@ -13,8 +13,10 @@ on_dependency_gained = {
 # ROOT = Overlord, FROM = Minor
 on_dependency_lost = {
 	FROM = { set_country_flag = dependencylost }
+	ROOT = { set_country_flag = dependencylost }
 	update_monuments_self = yes
 	FROM = { clr_country_flag = dependencylost }
+	ROOT = { clr_country_flag = dependencylost }
 }
 
 on_great_project_constructed = {

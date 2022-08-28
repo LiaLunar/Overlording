@@ -17,13 +17,95 @@ on_dependency_lost_effects_vanilla = {
 	
 }
 
-run_on_dependency_gained_compatability_effects = {
-	#Ante Bellum (dummy)
+on_dependency_gained_effects_ab = {
 	if = {
 		limit = {
-			exists = FRC
+			FROM = {
+				has_reform = dutch_republic
+			}
 		}
-		on_dependency_gained_effects_vanilla = yes
+		ROOT = {
+			country_event = {
+				id = dutch_republic.31
+			}# States General falls under a PU
+		}
+	}
+	#AB
+	if = {
+		limit = {
+			FROM = {
+				OR = {
+					tag = FEO
+					tag = GTH
+				}
+				is_subject_of = GLH
+			}
+		}
+		FROM = { set_country_flag = feo_was_vassalized }
+	}
+	if = {
+		limit = {
+			FROM = { has_reform = irish_highking_opp }
+		}
+		FROM = { save_event_target_as = hk_ire }
+		country_event = { id = hk_ire.9 } # Foreign power vassalizes HK
+		country_event = { id = hk_ire.14 } # Irish minor vassalizes HK
+	}
+	# Workaround for AI picking Vassalization Peace Option
+	# instead of Become Ruirech peace option
+	if = {
+		limit = {
+			ai = yes
+			FROM = {
+				ai = yes
+				NOT = { has_country_modifier = ire_high_king_opp } 
+				NOT = { is_subject_of_type = ire_vassal }
+				OR = {
+					primary_culture = irish
+					primary_culture = norse_gael
+				}
+				capital_scope = {
+					OR = {
+						area = munster_area
+						area = ulster_area
+						area = connacht_area
+						area = leinster_area
+					}
+				}
+			}
+			OR = {
+				primary_culture = irish
+				primary_culture = norse_gael
+			}
+			capital_scope = {
+				OR = {
+					area = munster_area
+					area = ulster_area
+					area = connacht_area
+					area = leinster_area
+				}
+			}
+		}
+		FROM = { grant_independence = yes }
+		create_subject = {
+			subject_type = ire_vassal
+			subject = FROM
+		}
+		FROM = { add_government_reform = irish_ruirech }
+	}
+}
+
+on_dependency_lost_effects_ab = {
+	
+}
+
+run_on_dependency_gained_compatability_effects = {
+	#Ante Bellum
+	if = {
+		limit = {
+			has_global_flag = ab_mod_active
+		}
+		on_dependency_gained_effects_ab = yes
 	}
 	#Vanilla
 	else = {
@@ -32,12 +114,12 @@ run_on_dependency_gained_compatability_effects = {
 }
 
 run_on_dependency_lost_compatability_effects = {
-	#Ante Bellum (dummy)
+	#Ante Bellum
 	if = {
 		limit = {
-			exists = FRC
+			has_global_flag = ab_mod_active
 		}
-		on_dependency_lost_effects_vanilla = yes
+		on_dependency_lost_effects_ab = yes
 	}
 	#Vanilla
 	else = {
