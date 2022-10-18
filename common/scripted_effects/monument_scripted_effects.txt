@@ -18014,17 +18014,929 @@ check_subject_monuments = {
 		}
 		if = {
 			limit = {
-				151 = {
+				8 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = falun_copper_mine
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = falun_copper_mine
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = falun_copper_mine
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			8 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = falun_copper_mine1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				8 = {
+					has_great_project = {
+						type = falun_copper_mine
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = falun_copper_mine
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			8 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = falun_copper_mine2
+							duration = -1
+						}
+						remove_country_modifier = falun_copper_mine1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				8 = {
+					has_great_project = {
+						type = falun_copper_mine
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			8 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = falun_copper_mine3
+							duration = -1
+						}
+						remove_country_modifier = falun_copper_mine2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				8 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = falun_copper_mine1
+				remove_country_modifier = falun_copper_mine2
+				remove_country_modifier = falun_copper_mine3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = falun_copper_mine1
+					has_country_modifier = falun_copper_mine2
+					has_country_modifier = falun_copper_mine3
+				}
+			}
+			remove_country_modifier = falun_copper_mine1
+			remove_country_modifier = falun_copper_mine2
+			remove_country_modifier = falun_copper_mine3
+		}
+		if = {
+			limit = {
+				12 = {
+					has_great_project = {
+						type = kronborg
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = kronborg
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = kronborg
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			12 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = kronborg1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				12 = {
+					has_great_project = {
+						type = kronborg
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = kronborg
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			12 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = kronborg2
+							duration = -1
+						}
+						remove_country_modifier = kronborg1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				12 = {
+					has_great_project = {
+						type = kronborg
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			12 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = kronborg3
+							duration = -1
+						}
+						remove_country_modifier = kronborg2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				12 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = kronborg1
+				remove_country_modifier = kronborg2
+				remove_country_modifier = kronborg3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = kronborg1
+					has_country_modifier = kronborg2
+					has_country_modifier = kronborg3
+				}
+			}
+			remove_country_modifier = kronborg1
+			remove_country_modifier = kronborg2
+			remove_country_modifier = kronborg3
+		}
+		if = {
+			limit = {
+				25 = {
+					has_great_project = {
+						type = visby_city
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = visby_city
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = visby_city
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			25 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = visby_city1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				25 = {
+					has_great_project = {
+						type = visby_city
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = visby_city
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			25 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = visby_city2
+							duration = -1
+						}
+						remove_country_modifier = visby_city1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				25 = {
+					has_great_project = {
+						type = visby_city
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			25 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = visby_city3
+							duration = -1
+						}
+						remove_country_modifier = visby_city2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				25 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = visby_city1
+				remove_country_modifier = visby_city2
+				remove_country_modifier = visby_city3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = visby_city1
+					has_country_modifier = visby_city2
+					has_country_modifier = visby_city3
+				}
+			}
+			remove_country_modifier = visby_city1
+			remove_country_modifier = visby_city2
+			remove_country_modifier = visby_city3
+		}
+		if = {
+			limit = {
+				270 = {
+					has_great_project = {
+						type = trakai_castle
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = trakai_castle
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = trakai_castle
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			270 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = trakai_castle1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				270 = {
+					has_great_project = {
+						type = trakai_castle
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = trakai_castle
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			270 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = trakai_castle2
+							duration = -1
+						}
+						remove_country_modifier = trakai_castle1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				270 = {
+					has_great_project = {
+						type = trakai_castle
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			270 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = trakai_castle3
+							duration = -1
+						}
+						remove_country_modifier = trakai_castle2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				270 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = trakai_castle1
+				remove_country_modifier = trakai_castle2
+				remove_country_modifier = trakai_castle3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = trakai_castle1
+					has_country_modifier = trakai_castle2
+					has_country_modifier = trakai_castle3
+				}
+			}
+			remove_country_modifier = trakai_castle1
+			remove_country_modifier = trakai_castle2
+			remove_country_modifier = trakai_castle3
+		}
+		if = {
+			limit = {
+				756 = {
+					has_great_project = {
+						type = salvador_da_bahia
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = salvador_da_bahia
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = salvador_da_bahia
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			756 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = salvador_da_bahia1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				756 = {
+					has_great_project = {
+						type = salvador_da_bahia
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = salvador_da_bahia
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			756 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = salvador_da_bahia2
+							duration = -1
+						}
+						remove_country_modifier = salvador_da_bahia1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				756 = {
+					has_great_project = {
+						type = salvador_da_bahia
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			756 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = salvador_da_bahia3
+							duration = -1
+						}
+						remove_country_modifier = salvador_da_bahia2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				756 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = salvador_da_bahia1
+				remove_country_modifier = salvador_da_bahia2
+				remove_country_modifier = salvador_da_bahia3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = salvador_da_bahia1
+					has_country_modifier = salvador_da_bahia2
+					has_country_modifier = salvador_da_bahia3
+				}
+			}
+			remove_country_modifier = salvador_da_bahia1
+			remove_country_modifier = salvador_da_bahia2
+			remove_country_modifier = salvador_da_bahia3
+		}
+		if = {
+			limit = {
+				1170 = {
+					has_great_project = {
+						type = mbanza_kongo
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = mbanza_kongo
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = mbanza_kongo
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1170 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = mbanza_kongo1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1170 = {
+					has_great_project = {
+						type = mbanza_kongo
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = mbanza_kongo
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1170 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = mbanza_kongo2
+							duration = -1
+						}
+						remove_country_modifier = mbanza_kongo1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1170 = {
+					has_great_project = {
+						type = mbanza_kongo
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1170 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = mbanza_kongo3
+							duration = -1
+						}
+						remove_country_modifier = mbanza_kongo2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1170 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = mbanza_kongo1
+				remove_country_modifier = mbanza_kongo2
+				remove_country_modifier = mbanza_kongo3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = mbanza_kongo1
+					has_country_modifier = mbanza_kongo2
+					has_country_modifier = mbanza_kongo3
+				}
+			}
+			remove_country_modifier = mbanza_kongo1
+			remove_country_modifier = mbanza_kongo2
+			remove_country_modifier = mbanza_kongo3
+		}
+		if = {
+			limit = {
+				1211 = {
+					has_great_project = {
+						type = harar_jugol
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = harar_jugol
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = harar_jugol
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1211 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = harar_jugol1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1211 = {
+					has_great_project = {
+						type = harar_jugol
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = harar_jugol
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1211 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = harar_jugol2
+							duration = -1
+						}
+						remove_country_modifier = harar_jugol1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1211 = {
+					has_great_project = {
+						type = harar_jugol
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			1211 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = harar_jugol3
+							duration = -1
+						}
+						remove_country_modifier = harar_jugol2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				1211 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = harar_jugol1
+				remove_country_modifier = harar_jugol2
+				remove_country_modifier = harar_jugol3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = harar_jugol1
+					has_country_modifier = harar_jugol2
+					has_country_modifier = harar_jugol3
+				}
+			}
+			remove_country_modifier = harar_jugol1
+			remove_country_modifier = harar_jugol2
+			remove_country_modifier = harar_jugol3
+		}
+		if = {
+			limit = {
+				679 = {
+					has_great_project = {
+						type = dujiangyan
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = dujiangyan
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = dujiangyan
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			679 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = dujiangyan1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				679 = {
+					has_great_project = {
+						type = dujiangyan
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = dujiangyan
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			679 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = dujiangyan2
+							duration = -1
+						}
+						remove_country_modifier = dujiangyan1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				679 = {
+					has_great_project = {
+						type = dujiangyan
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			679 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = dujiangyan3
+							duration = -1
+						}
+						remove_country_modifier = dujiangyan2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				679 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
+				}
+			}
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
+		}
+		if = {
+			limit = {
+				151 = {
+					has_great_project = {
+						type = dujiangyan
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = dujiangyan
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18037,7 +18949,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18049,11 +18961,11 @@ check_subject_monuments = {
 			limit = {
 				151 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18066,10 +18978,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18078,7 +18990,7 @@ check_subject_monuments = {
 			limit = {
 				151 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18091,10 +19003,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18108,37 +19020,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				234 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18151,7 +19063,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18163,11 +19075,11 @@ check_subject_monuments = {
 			limit = {
 				234 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18180,10 +19092,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18192,7 +19104,7 @@ check_subject_monuments = {
 			limit = {
 				234 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18205,10 +19117,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18222,37 +19134,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				236 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18265,7 +19177,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18277,11 +19189,11 @@ check_subject_monuments = {
 			limit = {
 				236 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18294,10 +19206,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18306,7 +19218,7 @@ check_subject_monuments = {
 			limit = {
 				236 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18319,10 +19231,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18336,37 +19248,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				2225 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18379,7 +19291,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18391,11 +19303,11 @@ check_subject_monuments = {
 			limit = {
 				2225 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18408,10 +19320,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18420,7 +19332,7 @@ check_subject_monuments = {
 			limit = {
 				2225 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18433,10 +19345,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18450,37 +19362,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				146 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18493,7 +19405,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18505,11 +19417,11 @@ check_subject_monuments = {
 			limit = {
 				146 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18522,10 +19434,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18534,7 +19446,7 @@ check_subject_monuments = {
 			limit = {
 				146 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18547,10 +19459,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18564,37 +19476,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				1816 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18607,7 +19519,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18619,11 +19531,11 @@ check_subject_monuments = {
 			limit = {
 				1816 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18636,10 +19548,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18648,7 +19560,7 @@ check_subject_monuments = {
 			limit = {
 				1816 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18661,10 +19573,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18678,37 +19590,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				609 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18721,7 +19633,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18733,11 +19645,11 @@ check_subject_monuments = {
 			limit = {
 				609 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18750,10 +19662,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18762,7 +19674,7 @@ check_subject_monuments = {
 			limit = {
 				609 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18775,10 +19687,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18792,37 +19704,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				2327 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18835,7 +19747,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18847,11 +19759,11 @@ check_subject_monuments = {
 			limit = {
 				2327 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18864,10 +19776,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18876,7 +19788,7 @@ check_subject_monuments = {
 			limit = {
 				2327 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -18889,10 +19801,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -18906,37 +19818,37 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
 				85 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18949,7 +19861,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city1
+							name = dujiangyan1
 							duration = -1
 						}
 					
@@ -18961,11 +19873,11 @@ check_subject_monuments = {
 			limit = {
 				85 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}}
 					owner = {
@@ -18978,10 +19890,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city2
+							name = dujiangyan2
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city1
+						remove_country_modifier = dujiangyan1
 					}
 				}
 			}
@@ -18990,7 +19902,7 @@ check_subject_monuments = {
 			limit = {
 				85 = {
 					has_great_project = {
-						type = zacatecas_mine_city
+						type = dujiangyan
 						tier = 3
 					}
 					owner = {
@@ -19003,10 +19915,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = zacatecas_mine_city3
+							name = dujiangyan3
 							duration = -1
 						}
-						remove_country_modifier = zacatecas_mine_city2
+						remove_country_modifier = dujiangyan2
 					}
 				}
 			}
@@ -19020,23 +19932,23 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = zacatecas_mine_city1
-				remove_country_modifier = zacatecas_mine_city2
-				remove_country_modifier = zacatecas_mine_city3
+				remove_country_modifier = dujiangyan1
+				remove_country_modifier = dujiangyan2
+				remove_country_modifier = dujiangyan3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = zacatecas_mine_city1
-					has_country_modifier = zacatecas_mine_city2
-					has_country_modifier = zacatecas_mine_city3
+					has_country_modifier = dujiangyan1
+					has_country_modifier = dujiangyan2
+					has_country_modifier = dujiangyan3
 				}
 			}
-			remove_country_modifier = zacatecas_mine_city1
-			remove_country_modifier = zacatecas_mine_city2
-			remove_country_modifier = zacatecas_mine_city3
+			remove_country_modifier = dujiangyan1
+			remove_country_modifier = dujiangyan2
+			remove_country_modifier = dujiangyan3
 		}
 		if = {
 			limit = {
@@ -29758,15 +30670,15 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 3
 					}}
 					owner = {
@@ -29779,7 +30691,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = potosi1
+							name = zacatecas_mine_city1
 							duration = -1
 						}
 					
@@ -29791,11 +30703,11 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 3
 					}}
 					owner = {
@@ -29808,10 +30720,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = potosi2
+							name = zacatecas_mine_city2
 							duration = -1
 						}
-						remove_country_modifier = potosi1
+						remove_country_modifier = zacatecas_mine_city1
 					}
 				}
 			}
@@ -29820,7 +30732,7 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = potosi
+						type = zacatecas_mine_city
 						tier = 3
 					}
 					owner = {
@@ -29833,10 +30745,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = potosi3
+							name = zacatecas_mine_city3
 							duration = -1
 						}
-						remove_country_modifier = potosi2
+						remove_country_modifier = zacatecas_mine_city2
 					}
 				}
 			}
@@ -29850,23 +30762,23 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = potosi1
-				remove_country_modifier = potosi2
-				remove_country_modifier = potosi3
+				remove_country_modifier = zacatecas_mine_city1
+				remove_country_modifier = zacatecas_mine_city2
+				remove_country_modifier = zacatecas_mine_city3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = potosi1
-					has_country_modifier = potosi2
-					has_country_modifier = potosi3
+					has_country_modifier = zacatecas_mine_city1
+					has_country_modifier = zacatecas_mine_city2
+					has_country_modifier = zacatecas_mine_city3
 				}
 			}
-			remove_country_modifier = potosi1
-			remove_country_modifier = potosi2
-			remove_country_modifier = potosi3
+			remove_country_modifier = zacatecas_mine_city1
+			remove_country_modifier = zacatecas_mine_city2
+			remove_country_modifier = zacatecas_mine_city3
 		}
 		if = {
 			limit = {
@@ -46402,15 +47314,15 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 1
 					}
 					NOT = { has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 2
 					}}
 					NOT = { has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 3
 					}}
 					owner = {
@@ -46423,7 +47335,7 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = fu_toob_benadir1
+							name = zacatecas_mine_city1
 							duration = -1
 						}
 					
@@ -46435,11 +47347,11 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 2
 					}
 					NOT = { has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 3
 					}}
 					owner = {
@@ -46452,10 +47364,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = fu_toob_benadir2
+							name = zacatecas_mine_city2
 							duration = -1
 						}
-						remove_country_modifier = fu_toob_benadir1
+						remove_country_modifier = zacatecas_mine_city1
 					}
 				}
 			}
@@ -46464,7 +47376,7 @@ check_subject_monuments = {
 			limit = {
 				856 = {
 					has_great_project = {
-						type = fu_toob_benadir
+						type = zacatecas_mine_city
 						tier = 3
 					}
 					owner = {
@@ -46477,10 +47389,10 @@ check_subject_monuments = {
 				 owner = { 
 					overlord = {
 						add_country_modifier = {
-							name = fu_toob_benadir3
+							name = zacatecas_mine_city3
 							duration = -1
 						}
-						remove_country_modifier = fu_toob_benadir2
+						remove_country_modifier = zacatecas_mine_city2
 					}
 				}
 			}
@@ -46494,23 +47406,23 @@ check_subject_monuments = {
 				}
 			}
 			every_country = {
-				remove_country_modifier = fu_toob_benadir1
-				remove_country_modifier = fu_toob_benadir2
-				remove_country_modifier = fu_toob_benadir3
+				remove_country_modifier = zacatecas_mine_city1
+				remove_country_modifier = zacatecas_mine_city2
+				remove_country_modifier = zacatecas_mine_city3
 			}
 		}
 		if = {
 			limit = {
 				has_country_flag = subjectmonumentlost
 				 OR = {
-					has_country_modifier = fu_toob_benadir1
-					has_country_modifier = fu_toob_benadir2
-					has_country_modifier = fu_toob_benadir3
+					has_country_modifier = zacatecas_mine_city1
+					has_country_modifier = zacatecas_mine_city2
+					has_country_modifier = zacatecas_mine_city3
 				}
 			}
-			remove_country_modifier = fu_toob_benadir1
-			remove_country_modifier = fu_toob_benadir2
-			remove_country_modifier = fu_toob_benadir3
+			remove_country_modifier = zacatecas_mine_city1
+			remove_country_modifier = zacatecas_mine_city2
+			remove_country_modifier = zacatecas_mine_city3
 		}
 		if = {
 			limit = {
@@ -53237,6 +54149,348 @@ check_subject_monuments = {
 			remove_country_modifier = gbr_colonial_office1
 			remove_country_modifier = gbr_colonial_office2
 			remove_country_modifier = gbr_colonial_office3
+		}
+		if = {
+			limit = {
+				134 = {
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			134 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_schonbrunn_palace1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				134 = {
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			134 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_schonbrunn_palace2
+							duration = -1
+						}
+						remove_country_modifier = me_schonbrunn_palace1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				134 = {
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			134 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_schonbrunn_palace3
+							duration = -1
+						}
+						remove_country_modifier = me_schonbrunn_palace2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				134 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = me_schonbrunn_palace1
+				remove_country_modifier = me_schonbrunn_palace2
+				remove_country_modifier = me_schonbrunn_palace3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = me_schonbrunn_palace1
+					has_country_modifier = me_schonbrunn_palace2
+					has_country_modifier = me_schonbrunn_palace3
+				}
+			}
+			remove_country_modifier = me_schonbrunn_palace1
+			remove_country_modifier = me_schonbrunn_palace2
+			remove_country_modifier = me_schonbrunn_palace3
+		}
+		if = {
+			limit = {
+				112 = {
+					has_great_project = {
+						type = me_venetian_arsenal
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = me_venetian_arsenal
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = me_venetian_arsenal
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			112 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_venetian_arsenal1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				112 = {
+					has_great_project = {
+						type = me_venetian_arsenal
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = me_venetian_arsenal
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			112 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_venetian_arsenal2
+							duration = -1
+						}
+						remove_country_modifier = me_venetian_arsenal1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				112 = {
+					has_great_project = {
+						type = me_venetian_arsenal
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			112 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_venetian_arsenal3
+							duration = -1
+						}
+						remove_country_modifier = me_venetian_arsenal2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				112 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = me_venetian_arsenal1
+				remove_country_modifier = me_venetian_arsenal2
+				remove_country_modifier = me_venetian_arsenal3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = me_venetian_arsenal1
+					has_country_modifier = me_venetian_arsenal2
+					has_country_modifier = me_venetian_arsenal3
+				}
+			}
+			remove_country_modifier = me_venetian_arsenal1
+			remove_country_modifier = me_venetian_arsenal2
+			remove_country_modifier = me_venetian_arsenal3
+		}
+		if = {
+			limit = {
+				4239 = {
+					has_great_project = {
+						type = me_belgrade_fortress
+						tier = 1
+					}
+					NOT = { has_great_project = {
+						type = me_belgrade_fortress
+						tier = 2
+					}}
+					NOT = { has_great_project = {
+						type = me_belgrade_fortress
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			4239 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_belgrade_fortress1
+							duration = -1
+						}
+					
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				4239 = {
+					has_great_project = {
+						type = me_belgrade_fortress
+						tier = 2
+					}
+					NOT = { has_great_project = {
+						type = me_belgrade_fortress
+						tier = 3
+					}}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			4239 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_belgrade_fortress2
+							duration = -1
+						}
+						remove_country_modifier = me_belgrade_fortress1
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				4239 = {
+					has_great_project = {
+						type = me_belgrade_fortress
+						tier = 3
+					}
+					owner = {
+						is_subject = yes
+						NOT = {	is_subject_of_type = tributary_state }
+					}
+				}
+			}
+			4239 = { 
+				 owner = { 
+					overlord = {
+						add_country_modifier = {
+							name = me_belgrade_fortress3
+							duration = -1
+						}
+						remove_country_modifier = me_belgrade_fortress2
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				4239 = {
+					owner = {
+						has_country_flag = dependencylost
+					}
+				}
+			}
+			every_country = {
+				remove_country_modifier = me_belgrade_fortress1
+				remove_country_modifier = me_belgrade_fortress2
+				remove_country_modifier = me_belgrade_fortress3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = subjectmonumentlost
+				 OR = {
+					has_country_modifier = me_belgrade_fortress1
+					has_country_modifier = me_belgrade_fortress2
+					has_country_modifier = me_belgrade_fortress3
+				}
+			}
+			remove_country_modifier = me_belgrade_fortress1
+			remove_country_modifier = me_belgrade_fortress2
+			remove_country_modifier = me_belgrade_fortress3
 		}
 	}
 }

@@ -27,6 +27,7 @@ on_startup_effects_vanilla = {
 	}
 	events = {
 		muslim_school_events.20 #Pick School
+		flavor_got.1 #Event for Gotland to select their mission tree
 	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
 	}
 	if = {
@@ -73,6 +74,20 @@ on_startup_effects_vanilla = {
 			set_country_flag = ayu_monarch_flag
 		}
 	}
+	#if = {
+	#	limit = {
+	#		OR = {
+	#			primary_culture = norse
+	#			AND = {
+	#				culture_group = scandinavian
+	#				religion = norse_pagan_reformed
+	#			}
+	#		}
+	#		NOT = { has_idea_group = norse_ideas }
+	#		is_playing_custom_nation = no
+	#	}
+	#	country_event = { id = ideagroups.1 } #Swap Ideas
+	#}
 }
 
 on_startup_effects_ab = {
@@ -1033,11 +1048,98 @@ on_startup_effects_anbennar = {
 	}
 }
 
+on_startup_effects_EE = {
+	# BAG = {
+		# set_heir_flag = QAR_fulad
+	# }
+	
+	if = {
+		limit = {
+			current_age = age_of_discovery
+		}
+		LXA = {
+			if = {
+				limit = {
+					NOT = { has_country_flag = lxa_loyalty_flag }
+				}
+				add_estate_loyalty = {
+					estate = estate_church
+					loyalty = -10
+				}
+				set_country_flag = lxa_loyalty_flag
+			}
+		}
+	}
+	emperor = {
+		save_global_event_target_as = Emperor
+	}
+	if = {
+		limit = {
+			is_emperor_of_china = yes
+		}
+		save_global_event_target_as = EmperorOfChina
+	}
+	events = {
+		muslim_school_events.20 #Pick School
+	#flavor_fra.15000 #Make the French Revolution happen if starting in 1789
+		ME_Qara_Qoyunlu_Events.10
+		missions_expanded_events.5
+	}
+	if = {
+		limit = {
+			has_dlc = "Cradle of Civilization"
+			has_country_modifier = tur_janissary
+		}
+		remove_country_modifier = tur_janissary
+	}
+	initialize_schools_effect = yes #This is only used here but is used for readability of on_action file.
+
+	if = {
+		limit = {
+			NOT = { has_country_flag = new_flavour_bav_13_has_been_triggered }
+			OR = {
+				tag = UBV
+				tag = LBV
+				tag = ING
+			}
+		}
+		set_country_flag = new_flavour_bav_13_has_been_triggered
+		country_event = { id = new_flavour_bav.13 days = 90 } #better not to allow almost instant DOWs
+	}
+	if = {
+		limit = {
+			tag = FRA
+			started_in = 1789.7.14
+			NOT = { is_year = 1790 }
+			NOT = { has_disaster = french_revolution }
+		}
+		add_disaster_progress = {
+			value = 100
+			disaster = french_revolution
+		}
+	}
+	if = {
+		limit = {
+			exists = SUK
+		}
+		SUK = {
+			set_ruler_flag = suk_monarch_flag
+		}
+		AYU = {
+			set_country_flag = ayu_monarch_flag
+		}
+	}
+	
+	361 = { 
+		province_event = { id = ME_Abbasid_Events.1 }
+	}
+}
+
 run_on_startup_compatability_effects = {
 	#Ante Bellum
 	if = {
 		limit = {
-			exists = FRC
+			FRC = { num_of_cities = 1 }
 		}
 		on_startup_effects_ab = yes
 		set_global_flag = ab_mod_active
@@ -1045,7 +1147,7 @@ run_on_startup_compatability_effects = {
 	#Touhou Universalis
 	else_if = {
 		limit = {
-			exists = GNK
+			GNK = { num_of_cities = 1 }
 		}
 		on_startup_effects_th = yes
 		set_global_flag = th_mod_active
@@ -1053,10 +1155,45 @@ run_on_startup_compatability_effects = {
 	#Anbennar
 	else_if = {
 		limit = {
-			exists = R71
+			R71 = { num_of_cities = 1 }
 		}
 		on_startup_effects_anbennar = yes
 		set_global_flag = anb_mod_active
+	}
+	#EE
+	else_if = {
+		limit = {
+			134 = {
+				OR = {
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 1
+					}
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 2
+					}
+					has_great_project = {
+						type = me_schonbrunn_palace
+						tier = 3
+					}
+				}
+			}
+		}
+		on_startup_effects_EE = yes
+		set_global_flag = missions_expanded_mod_active
+		country_event = { id = paradox_or_mod_missions_events.1 }
+		if = {
+			limit = {
+				has_global_flag = paradox_or_mod_missions_events_flag
+				NOT = { has_country_flag = has_selected_missions_@ROOT }
+				OR = {
+					country_has_both_paradox_and_me_missions = yes
+					country_has_both_paradox_and_golden_bull_missions = yes
+				}
+			}
+			country_event = { id = paradox_or_mod_missions_events.2 }
+		}
 	}
 	#LotF
 	else_if = {

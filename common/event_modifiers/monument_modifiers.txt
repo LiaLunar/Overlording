@@ -1316,16 +1316,16 @@ chan_chan_citadel3 = {
 }
 doges_palace1 = {
 	reform_progress_growth = 0.1
-	republican_tradition = 0.1 
+	republican_tradition = 0.1
 }
 doges_palace2 = {
 	reform_progress_growth = 0.2
-	republican_tradition = 0.25 
+	republican_tradition = 0.25
 	prestige = 0.5
 }
 doges_palace3 = {
 	reform_progress_growth = 0.3
-	republican_tradition = 0.5 
+	republican_tradition = 0.5
 	prestige = 1
 }
 duomo_milano1 = {
@@ -1908,16 +1908,15 @@ walls_benin3 = {
 }
 winter_palace1 = {
 	yearly_absolutism = 0.25
+	reform_progress_growth = 0.1
 }
 winter_palace2 = {
 	yearly_absolutism = 0.5
-	accept_vassalization_reasons = 15
-	diplomats = 1
+	reform_progress_growth = 0.15
 }
 winter_palace3 = {
 	yearly_absolutism = 0.5
-	accept_vassalization_reasons = 30
-	diplomats = 1
+	reform_progress_growth = 0.2
 }
 zacatecas_mine_city2 = {
 	interest = -0.25
@@ -1925,12 +1924,96 @@ zacatecas_mine_city2 = {
 zacatecas_mine_city3 = {
 	interest = -0.5
 }
-zacatecas_mine_city1 = {
+falun_copper_mine2 = {
+	artillery_cost = -0.1
+}
+falun_copper_mine3 = {
+	artillery_cost = -0.2
+}
+kronborg1 = {
+	naval_tradition_from_trade = 0.25
+}
+kronborg2 = {
+	naval_tradition_from_trade = 0.5
+}
+kronborg3 = {
+	naval_tradition_from_trade = 1
+}
+visby_city1 = {
+	privateer_efficiency = 0.2
+}
+visby_city2 = {
+	privateer_efficiency = 0.33
+	global_own_trade_power = 0.15
+}
+visby_city3 = {
+	privateer_efficiency = 0.5
+	global_own_trade_power = 0.25
+}
+trakai_castle1 = {
+	prestige = 0.25
+	monthly_splendor = 0.5
+	reform_progress_growth = 0.05
+}
+trakai_castle2 = {
+	prestige = 0.5
+	monthly_splendor = 1
+	reform_progress_growth = 0.1
+	advisor_pool = 1
+}
+trakai_castle3 = {
+	prestige = 1
+	monthly_splendor = 1.5
+	reform_progress_growth = 0.2
+	advisor_pool = 2
+}
+salvador_da_bahia1 = {
+	global_trade_power = 0.1
+	global_colonial_growth = 10
+}
+salvador_da_bahia2 = {
+	global_trade_power = 0.15
+	global_colonial_growth = 15
+}
+salvador_da_bahia3 = {
+	global_trade_power = 0.2
+	global_colonial_growth = 20
+}
+mbanza_kongo1 = {
+	institution_spread_from_true_faith = 0.2
+	reform_progress_growth = 0.1
+}
+mbanza_kongo2 = {
+	institution_spread_from_true_faith = 0.33
+	reform_progress_growth = 0.15
+	legitimacy = 0.5
+}
+mbanza_kongo3 = {
+	institution_spread_from_true_faith = 0.5
+	reform_progress_growth = 0.2
+	legitimacy = 1
+	allow_free_estate_privilege_revocation = yes
+}
+harar_jugol1 = {
+	prestige_per_development_from_conversion = 0.1
+}
+harar_jugol2 = {
+	stability_cost_modifier = -0.1
+	prestige_per_development_from_conversion = 0.2
+}
+harar_jugol3 = {
+	stability_cost_modifier = -0.25
+	prestige_per_development_from_conversion = 0.3
+}
+dujiangyan3 = {
+	global_monthly_devastation = -0.05
+}
+dujiangyan1 = {
 	tolerance_own = 0.25
 	tolerance_heretic = 0.25
 	church_loyalty_modifier = 0.05
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	tolerance_own = 0.5
 	tolerance_heretic = 0.5
 	monthly_piety_accelerator = 0.001
@@ -1938,7 +2021,7 @@ zacatecas_mine_city2 = {
 	papal_influence = 0.5
 	church_loyalty_modifier = 0.1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	tolerance_own = 1
 	tolerance_heretic = 1
 	monthly_piety_accelerator = 0.002
@@ -1946,113 +2029,113 @@ zacatecas_mine_city3 = {
 	papal_influence = 1
 	church_loyalty_modifier = 0.15
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	tolerance_heretic = 0.5
 	tolerance_heathen = 0.5
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	tolerance_heretic = 0.5
 	tolerance_heathen = 0.5
 	stability_cost_modifier = -0.1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	tolerance_heretic = 1
 	tolerance_heathen = 1
 	stability_cost_modifier = -0.25
 	global_missionary_strength = 0.01
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	army_tradition = 0.25
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	army_tradition = 0.25
 	prestige = 0.25
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	army_tradition = 0.5
 	prestige = 0.5
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	culture_conversion_cost = -0.1
 	global_missionary_strength = 0.01
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	culture_conversion_cost = -0.10
 	global_missionary_strength = 0.01
 	missionaries = 1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	culture_conversion_cost = -0.25
 	global_missionary_strength = 0.01
 	missionaries = 1
 	idea_cost = -0.05
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	advisor_cost = -0.10
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	advisor_cost = -0.1
 	advisor_pool = 1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	advisor_cost = -0.2
 	advisor_pool = 1
 	yearly_corruption = -0.1
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	yearly_absolutism = 0.25
 	imperial_mandate = 0.03
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	yearly_absolutism = 0.5
 	imperial_mandate = 0.03
 	prestige_decay = -0.01
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	yearly_absolutism = 0.5
 	imperial_mandate = 0.05
 	prestige_decay = -0.02
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	yearly_karma_decay = 0.05  
 	technology_cost = -0.05
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	yearly_karma_decay = 0.1  
 	technology_cost = -0.1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	yearly_karma_decay = 0.15  
 	technology_cost = -0.10
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	diplomatic_reputation = 1
 	envoy_travel_time = -0.20
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	diplomatic_reputation = 1
 	envoy_travel_time = -0.25
 	fabricate_claims_cost = -0.1
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	diplomatic_reputation = 2
 	envoy_travel_time = -0.33
 	diplomatic_upkeep = 1
 	fabricate_claims_cost = -0.2
 }
-zacatecas_mine_city1 = {
+dujiangyan1 = {
 	papal_influence = 0.5
 	monthly_fervor_increase = 0.25
 	church_power_modifier = 0.05
 	enforce_religion_cost = -0.1
 }
-zacatecas_mine_city2 = {
+dujiangyan2 = {
 	papal_influence = 1
 	monthly_fervor_increase = 0.5
 	church_power_modifier = 0.1
 	enforce_religion_cost = -0.25
 }
-zacatecas_mine_city3 = {
+dujiangyan3 = {
 	papal_influence = 2
 	monthly_fervor_increase = 1
 	church_power_modifier = 0.15
@@ -3319,10 +3402,10 @@ potosi3 = {
 	reduced_liberty_desire = 5
 	diplomatic_annexation_cost = -0.1
 }
-potosi2 = {
+zacatecas_mine_city2 = {
 	interest = -0.25
 }
-potosi3 = {
+zacatecas_mine_city3 = {
 	interest = -0.5
 }
 fu_hansehalle1 = {
@@ -5081,10 +5164,10 @@ fu_toob_benadir3 = {
 	accept_vassalization_reasons = 30
 	diplomats = 1
 }
-fu_toob_benadir2 = {
+zacatecas_mine_city2 = {
 	interest = -0.25
 }
-fu_toob_benadir3 = {
+zacatecas_mine_city3 = {
 	interest = -0.5
 }
 temple_of_arkona1 = {
@@ -5813,4 +5896,24 @@ gbr_colonial_office3 = {
 	global_tariffs = 0.25
 	trade_company_investment_cost = -0.33
 	colonists = 1
+}
+me_schonbrunn_palace1 = {
+	all_estate_loyalty_equilibrium = 0.05
+	diplomatic_reputation = 1
+}
+me_schonbrunn_palace2 = {
+	all_estate_loyalty_equilibrium = 0.1
+	diplomatic_reputation = 1
+}
+me_schonbrunn_palace3 = {
+	all_estate_loyalty_equilibrium = 0.1
+	diplomatic_reputation = 2
+	reasons_to_elect = 20
+}
+me_venetian_arsenal2 = {
+	naval_forcelimit_modifier = 0.1
+}
+me_venetian_arsenal3 = {
+	naval_forcelimit_modifier = 0.15
+	ship_durability = 0.05
 }

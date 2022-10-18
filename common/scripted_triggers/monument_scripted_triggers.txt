@@ -133,6 +133,78 @@ has_monument = {
 			tier = 3
 		}
 		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_holy_cross_cathedral
+			tier = 3
+		}
+		has_great_project = {
+			type = alp_arslan
+			tier = 1
+		}
+		has_great_project = {
+			type = alp_arslan
+			tier = 2
+		}
+		has_great_project = {
+			type = alp_arslan
+			tier = 3
+		}
+		has_great_project = {
+			type = theodosian
+			tier = 1
+		}
+		has_great_project = {
+			type = theodosian
+			tier = 2
+		}
+		has_great_project = {
+			type = theodosian
+			tier = 3
+		}
+		has_great_project = {
+			type = barlin
+			tier = 1
+		}
+		has_great_project = {
+			type = barlin
+			tier = 2
+		}
+		has_great_project = {
+			type = barlin
+			tier = 3
+		}
+		has_great_project = {
 			type = sanssouci_palace
 			tier = 1
 		}
@@ -1825,111 +1897,207 @@ has_monument = {
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = falun_copper_mine
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = falun_copper_mine
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = falun_copper_mine
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = kronborg
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = kronborg
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = kronborg
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = visby_city
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = visby_city
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = visby_city
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = trakai_castle
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = trakai_castle
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = trakai_castle
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = salvador_da_bahia
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = salvador_da_bahia
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = salvador_da_bahia
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = mbanza_kongo
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = mbanza_kongo
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = mbanza_kongo
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = harar_jugol
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = harar_jugol
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = harar_jugol
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
 			tier = 3
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
 			tier = 1
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
 			tier = 2
 		}
 		has_great_project = {
-			type = zacatecas_mine_city
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 3
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 1
+		}
+		has_great_project = {
+			type = dujiangyan
+			tier = 2
+		}
+		has_great_project = {
+			type = dujiangyan
 			tier = 3
 		}
 		has_great_project = {
@@ -3061,15 +3229,15 @@ has_monument = {
 			tier = 3
 		}
 		has_great_project = {
-			type = potosi
+			type = zacatecas_mine_city
 			tier = 1
 		}
 		has_great_project = {
-			type = potosi
+			type = zacatecas_mine_city
 			tier = 2
 		}
 		has_great_project = {
-			type = potosi
+			type = zacatecas_mine_city
 			tier = 3
 		}
 		has_great_project = {
@@ -3577,6 +3745,1626 @@ has_monument = {
 			tier = 3
 		}
 		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 1
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 2
+		}
+		has_great_project = {
+			type = fu_toob_benadir
+			tier = 3
+		}
+		has_great_project = {
+			type = zacatecas_mine_city
+			tier = 1
+		}
+		has_great_project = {
+			type = zacatecas_mine_city
+			tier = 2
+		}
+		has_great_project = {
+			type = zacatecas_mine_city
+			tier = 3
+		}
+		has_great_project = {
+			type = temple_of_arkona
+			tier = 1
+		}
+		has_great_project = {
+			type = temple_of_arkona
+			tier = 2
+		}
+		has_great_project = {
+			type = temple_of_arkona
+			tier = 3
+		}
+		has_great_project = {
+			type = fortress_veligrad
+			tier = 1
+		}
+		has_great_project = {
+			type = fortress_veligrad
+			tier = 2
+		}
+		has_great_project = {
+			type = fortress_veligrad
+			tier = 3
+		}
+		has_great_project = {
+			type = szeged
+			tier = 1
+		}
+		has_great_project = {
+			type = szeged
+			tier = 2
+		}
+		has_great_project = {
+			type = szeged
+			tier = 3
+		}
+		has_great_project = {
+			type = lighthouse_alexandria
+			tier = 1
+		}
+		has_great_project = {
+			type = lighthouse_alexandria
+			tier = 2
+		}
+		has_great_project = {
+			type = lighthouse_alexandria
+			tier = 3
+		}
+		has_great_project = {
+			type = ottoman_market
+			tier = 1
+		}
+		has_great_project = {
+			type = ottoman_market
+			tier = 2
+		}
+		has_great_project = {
+			type = ottoman_market
+			tier = 3
+		}
+		has_great_project = {
+			type = hohenstaufen_palace
+			tier = 1
+		}
+		has_great_project = {
+			type = hohenstaufen_palace
+			tier = 2
+		}
+		has_great_project = {
+			type = hohenstaufen_palace
+			tier = 3
+		}
+		has_great_project = {
+			type = hradcany
+			tier = 1
+		}
+		has_great_project = {
+			type = hradcany
+			tier = 2
+		}
+		has_great_project = {
+			type = hradcany
+			tier = 3
+		}
+		has_great_project = {
+			type = walls_ston
+			tier = 1
+		}
+		has_great_project = {
+			type = walls_ston
+			tier = 2
+		}
+		has_great_project = {
+			type = walls_ston
+			tier = 3
+		}
+		has_great_project = {
+			type = nicene_academy
+			tier = 1
+		}
+		has_great_project = {
+			type = nicene_academy
+			tier = 2
+		}
+		has_great_project = {
+			type = nicene_academy
+			tier = 3
+		}
+		has_great_project = {
+			type = preslav_literary_school
+			tier = 1
+		}
+		has_great_project = {
+			type = preslav_literary_school
+			tier = 2
+		}
+		has_great_project = {
+			type = preslav_literary_school
+			tier = 3
+		}
+		has_great_project = {
+			type = new_world_port
+			tier = 1
+		}
+		has_great_project = {
+			type = new_world_port
+			tier = 2
+		}
+		has_great_project = {
+			type = new_world_port
+			tier = 3
+		}
+		has_great_project = {
+			type = pirate_haven_medina
+			tier = 1
+		}
+		has_great_project = {
+			type = pirate_haven_medina
+			tier = 2
+		}
+		has_great_project = {
+			type = pirate_haven_medina
+			tier = 3
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 1
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 2
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 3
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 1
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 2
+		}
+		has_great_project = {
+			type = arsenal
+			tier = 3
+		}
+		has_great_project = {
+			type = shrine_ukko
+			tier = 1
+		}
+		has_great_project = {
+			type = shrine_ukko
+			tier = 2
+		}
+		has_great_project = {
+			type = shrine_ukko
+			tier = 3
+		}
+		has_great_project = {
+			type = aachen
+			tier = 1
+		}
+		has_great_project = {
+			type = aachen
+			tier = 2
+		}
+		has_great_project = {
+			type = aachen
+			tier = 3
+		}
+		has_great_project = {
+			type = sich
+			tier = 1
+		}
+		has_great_project = {
+			type = sich
+			tier = 2
+		}
+		has_great_project = {
+			type = sich
+			tier = 3
+		}
+		has_great_project = {
+			type = ch_irrigation
+			tier = 1
+		}
+		has_great_project = {
+			type = ch_irrigation
+			tier = 2
+		}
+		has_great_project = {
+			type = ch_irrigation
+			tier = 3
+		}
+		has_great_project = {
+			type = yuelu_academy
+			tier = 1
+		}
+		has_great_project = {
+			type = yuelu_academy
+			tier = 2
+		}
+		has_great_project = {
+			type = yuelu_academy
+			tier = 3
+		}
+		has_great_project = {
+			type = xian_wall
+			tier = 1
+		}
+		has_great_project = {
+			type = xian_wall
+			tier = 2
+		}
+		has_great_project = {
+			type = xian_wall
+			tier = 3
+		}
+		has_great_project = {
+			type = mukden
+			tier = 1
+		}
+		has_great_project = {
+			type = mukden
+			tier = 2
+		}
+		has_great_project = {
+			type = mukden
+			tier = 3
+		}
+		has_great_project = {
+			type = koreana
+			tier = 1
+		}
+		has_great_project = {
+			type = koreana
+			tier = 2
+		}
+		has_great_project = {
+			type = koreana
+			tier = 3
+		}
+		has_great_project = {
+			type = bergen
+			tier = 1
+		}
+		has_great_project = {
+			type = bergen
+			tier = 2
+		}
+		has_great_project = {
+			type = bergen
+			tier = 3
+		}
+		has_great_project = {
+			type = nidaros
+			tier = 1
+		}
+		has_great_project = {
+			type = nidaros
+			tier = 2
+		}
+		has_great_project = {
+			type = nidaros
+			tier = 3
+		}
+		has_great_project = {
+			type = cursed
+			tier = 1
+		}
+		has_great_project = {
+			type = cursed
+			tier = 2
+		}
+		has_great_project = {
+			type = cursed
+			tier = 3
+		}
+		has_great_project = {
+			type = tsarevets
+			tier = 1
+		}
+		has_great_project = {
+			type = tsarevets
+			tier = 2
+		}
+		has_great_project = {
+			type = tsarevets
+			tier = 3
+		}
+		has_great_project = {
+			type = saladin
+			tier = 1
+		}
+		has_great_project = {
+			type = saladin
+			tier = 2
+		}
+		has_great_project = {
+			type = saladin
+			tier = 3
+		}
+		has_great_project = {
+			type = sivas
+			tier = 1
+		}
+		has_great_project = {
+			type = sivas
+			tier = 2
+		}
+		has_great_project = {
+			type = sivas
+			tier = 3
+		}
+		has_great_project = {
+			type = gelati
+			tier = 1
+		}
+		has_great_project = {
+			type = gelati
+			tier = 2
+		}
+		has_great_project = {
+			type = gelati
+			tier = 3
+		}
+		has_great_project = {
+			type = rhodes
+			tier = 1
+		}
+		has_great_project = {
+			type = rhodes
+			tier = 2
+		}
+		has_great_project = {
+			type = rhodes
+			tier = 3
+		}
+		has_great_project = {
+			type = apollo
+			tier = 1
+		}
+		has_great_project = {
+			type = apollo
+			tier = 2
+		}
+		has_great_project = {
+			type = apollo
+			tier = 3
+		}
+		has_great_project = {
 			type = jagiellonian_university
 			tier = 1
 		}
@@ -3910,6 +5698,42 @@ has_monument = {
 		}
 		has_great_project = {
 			type = gbr_colonial_office
+			tier = 3
+		}
+		has_great_project = {
+			type = me_schonbrunn_palace
+			tier = 1
+		}
+		has_great_project = {
+			type = me_schonbrunn_palace
+			tier = 2
+		}
+		has_great_project = {
+			type = me_schonbrunn_palace
+			tier = 3
+		}
+		has_great_project = {
+			type = me_venetian_arsenal
+			tier = 1
+		}
+		has_great_project = {
+			type = me_venetian_arsenal
+			tier = 2
+		}
+		has_great_project = {
+			type = me_venetian_arsenal
+			tier = 3
+		}
+		has_great_project = {
+			type = me_belgrade_fortress
+			tier = 1
+		}
+		has_great_project = {
+			type = me_belgrade_fortress
+			tier = 2
+		}
+		has_great_project = {
+			type = me_belgrade_fortress
 			tier = 3
 		}
 	}

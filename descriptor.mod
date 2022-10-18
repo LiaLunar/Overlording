@@ -12,7 +12,8 @@ dependencies={
 	"Land of the Free (USA Overhaul Mod)"
 	"AB Early Access"
 	"Ante Bellum"
+	"Missions Expanded"
 }
 name="Monument Effects for Overlords"
-supported_version="1.33.3"
+supported_version="1.34.4"
 remote_file_id="2833880336"

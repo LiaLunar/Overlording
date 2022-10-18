@@ -17,6 +17,7 @@ on_dependency_lost = {
 	update_monuments_self = yes
 	FROM = { clr_country_flag = dependencylost }
 	ROOT = { clr_country_flag = dependencylost }
+	run_on_dependency_lost_compatability_effects = yes
 }
 
 on_great_project_constructed = {
