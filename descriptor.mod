@@ -13,6 +13,8 @@ dependencies={
 	"AB Early Access"
 	"Ante Bellum"
 	"Missions Expanded"
+	"Missions Expanded Rum"
+	"Missions Expanded Git"
 }
 name="Monument Effects for Overlords"
 supported_version="1.34.4"
